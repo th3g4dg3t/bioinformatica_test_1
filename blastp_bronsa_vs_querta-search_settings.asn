@@ -1,0 +1,157 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastp",
+    service "plain",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local str "Query_7215255"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">"
+                }
+              }
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 625,
+            seq-data ncbieaa "METKSLIEELILRKSQQKRKMSPSNYKDRLYVLQTASIVHTDYDEIFD
+PMTTRKRTLKGSIELKKLRCVEKVNLEDQTPVERQYPFQVVHENYLLYVFAPDRESRQRWVLALKKETRNGWADGNST
+RELQSDEFKEFEDESTEDQMDESDMTDPTKNASKKPLPPTPEDNRKLLPESEENLVIAMYDYLTQDPQELMLQRNEEY
+YVLDSSEIHWWRVQDKNGHEGYVPSSYLVEKSPNNLETYEWYNKNINRNKAEKLLLDEGKEGAFMVRDSRTLGTYTVS
+VFTKAFVSDSCPSIKHYHIKETNDTPKRYYLAEKHLFNTIPELITYHQHNSAGLISRLKYPVSRHQSAFILIPPINIG
+SWEIDPKDLTFLQEIGSGQFGLVHLGYWLEKNKVAIKTIQEGAMSEEEFIEEAEVMMKLSHPKLVQLYGVCLEQTPIC
+LVFEFMEHGCLSDYLRNQRGSFTTDTLLGMCQDVCEGMAYLEKAFVIHRDLAARNCLVGESQVIKVSDFGMTRFVLDD
+QYTSSTGTKFPVKWASPEVFSFNRYSSKSDVWSFGVLMWEVFSEGKIPYERFNNSETTEHVIQGLRLYRPQQASERVY
+AIMYSCWHEKAEERPTFSALLGSIVDITDEL"
+          }
+        }
+      }
+    },
+    subject sequences {
+      {
+        id {
+          local str "Query_7215257"
+        },
+        descr {
+          user {
+            type str "CFastaReader",
+            data {
+              {
+                label str "DefLine",
+                data str ">"
+              }
+            }
+          }
+        },
+        inst {
+          repr raw,
+          mol aa,
+          length 625,
+          seq-data ncbieaa "MDTKSILEELLLKRSQQKKKMSPSNYKERLFVLNTASLVHTDYDDIFEPM
+TTKKRTLKGSIEIKKIRCVEKVNLEEQTPVERQYPFQVVHDNYLLYVFAPDRESRQRWVLALKKETRNNNSLVPKYHP
+NFWMDGRWRCCVQTEKLAPGCAEYDPTKNASKRPAPSTPSDQKKLLPESEENLVIAMYDYLTQDPQELMLQRNEEYYV
+LDSSEIHWWRVQDKNGHEGYVPSSYLVEKSPSQIDSFDWYNKNINRNKAEKLLLDEGKEGAFMVRDSRTLGTYTVSVF
+TKAFVSDSCPSIRHYHIRESNDTPKRYYLAEKHLFNTIPELITYHQHNSAGLISRLKYPVTKKERPFILIPPINIGSW
+EIDPKDLTFLQEIASASVGLVTLGAGKEFAAVAIATIQEGAMSEEEFIEEAEVMMKLSHPKLVQLYGVCLEQTPICLV
+FEFMEHGCLSDYLRNQRGSFTTDTLLGMCQDVCEGMAYLEKAFSTGAETGSFQSVAGESQVIKVSDFGMTRFVLDDQY
+TSSTGTKFPVKWASPEVFSFNRYSSKSDVWSFGVLMWEVFSEGKIPYERFNNSETTEHVIQGLRLYRPQQATDKAFAI
+MYSCWHEKAEERPTFSALLGSIVDIKDEL"
+        }
+      }
+    },
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 5, 10, -2 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 40
+      },
+      {
+        name "SegFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean FALSE
+      },
+      {
+        name "WordSize",
+        value integer 3
+      },
+      {
+        name "WordThreshold",
+        value integer 11
+      },
+      {
+        name "MatrixName",
+        value string "BLOSUM62"
+      },
+      {
+        name "GapOpeningCost",
+        value integer 11
+      },
+      {
+        name "GapExtensionCost",
+        value integer 1
+      },
+      {
+        name "CompositionBasedStats",
+        value integer 2
+      },
+      {
+        name "SmithWatermanMode",
+        value boolean FALSE
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "Bronsa_HS_vs_Querta_HS"
+      },
+      {
+        name "Web_NewWindow",
+        value boolean TRUE
+      },
+      {
+        name "Web_BlastSpecialPage",
+        value string "blast2seq"
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+
